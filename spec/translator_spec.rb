@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require_relative '../translator'
 
 describe Yandex::Translator do
-  context "translate" do
+  context 'translate' do
     it 'server can translate ru-en' do
       Yandex::Translator.current_lang = 1
       res = Yandex::Translator.translate('house')
